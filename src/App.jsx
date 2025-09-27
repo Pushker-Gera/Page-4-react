@@ -14,9 +14,9 @@ const App = (props) => {
             which makes creating a website quick and easy</p>
         </div>
         <div className="row">
-          {Card_Data.map((a, b) => {
-            return <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={b}>
-              <IconBox img={a.img}/>
+          {Card_Data.map((card, i) => {
+            return <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={i}>
+              <IconBox img={card.img}/>
               </div>
           })}
           </div>
